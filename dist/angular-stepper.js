@@ -12,7 +12,7 @@ angular.module('revolunet.stepper', [])
             ngModel: '='
         },
         template: '<button type="button" ng-disabled="isOverMin()" ng-click="decrement()">-</button>' +
-                  '<input type="text" ng-model="ngModel">' +
+                  '<div>{{ngModel}}</div>' +
                   '<button type="button" ng-disabled="isOverMax()" ng-click="increment()">+</button>',
         link: function(scope, iElement, iAttrs, ngModelController) {
 
